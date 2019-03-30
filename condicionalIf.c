@@ -4,20 +4,23 @@
 
 int main()
 {
-  printf("Condicional If  \n");
+  printf("Condicional If - Else \n");
 
-  int valA, valB, valC;
+  int valA = 50;
+  int valB = 100;
+  int valC = 150;
 
-  valA = valB = 100;
   printf("Primera condición  \n");
     if(valA == valB){
-      printf("Ambos valores son iguales  \n");
+      printf("Esta condicion no se cumplira \n");
     }
-    if(valA == valB){
-      printf("Ambos valores son iguales  \n");
-      valC = valA + valB;
-      printf("Ademas el valor de ambos numeros es: %i", valC);
+    else if(valB == valC){
+      printf("Esta condicion tampoco se cumplira \n");
     }
+    else{
+      printf("Despues de esta condicion el programa terminara \n");
+    }
+
 
   return 0;
 }

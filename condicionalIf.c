@@ -4,23 +4,19 @@
 
 int main()
 {
-  printf("Condicional If - Else \n");
+ printf("Reto 1 \n");
 
-  int valA = 50;
-  int valB = 100;
-  int valC = 150;
+  int number = 5;
+  int numeroIngresado;
 
-  printf("Primera condición  \n");
-    if(valA == valB){
-      printf("Esta condicion no se cumplira \n");
-    }
-    else if(valB == valC){
-      printf("Esta condicion tampoco se cumplira \n");
-    }
-    else{
-      printf("Despues de esta condicion el programa terminara \n");
-    }
+  printf("Adivina el numero entre 1 y 10 que estoy pensando: ");
+  scanf("%i", &numeroIngresado);
 
-
+  if(number == numeroIngresado){
+    printf("Adivinaste");
+  }
+  else{
+    printf("Ese no es, perdiste!");
+  }
   return 0;
 }

@@ -3,18 +3,21 @@
 
 int main()
 {
-  int upperLim, bottomLim;
+  printf("Veremos la secuencia fibonacci! ");
 
-  printf("Vamos a imprimir en orden descendiente \n");
+  int s;
+  int num = 0;
+  int res = 1;
 
-  printf("Ingresar limite superior: \n");
-  scanf("%i", &upperLim);
+  printf("dime cuantos numeros de fibo quieres: ");
+  scanf("%i", &s);
 
-  printf("Ingresar limite inferior: \n");
-  scanf("%i", &bottomLim);
-
-  for(int i = upperLim; i >= bottomLim; i--){
-    printf("El numero es : %i \n", i);
+  for(int i = 0; i <= s; i++)
+  {
+    printf("%i \n", num);
+    num += res;
+    res = num - res;
   }
+
   return 0;
 }

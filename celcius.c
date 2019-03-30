@@ -8,7 +8,7 @@ int main()
 
     printf("Ingrese el valor de fahrenheit: " );
 
-    scanf("&i", &fahrenheit);
+    scanf("%i", &fahrenheit);
 
     float celcius = (fahrenheit - 32) / 1.8 ;
 

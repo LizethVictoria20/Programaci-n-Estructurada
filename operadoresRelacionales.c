@@ -59,6 +59,7 @@ int main()
   valorA = 5;
   valorB = valorC = 10;
 
+  //Operador AND
   if((valorA < valorB) && (valorB == valorC)){
     printf("Se cumplieron las dos condiciones \n");
   }
@@ -66,7 +67,7 @@ int main()
     printf("No se cumplieron las dos condiciones \n");
   }
 
-
+  //Operador OR
   if((valorA > valorB) || (valorA <= valorC)){
     printf("Se cumplieron por lo menos una de las dos condiciones \n");
   }

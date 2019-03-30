@@ -3,9 +3,15 @@
 
 int main()
 {
-  int x = 10;
-  x += x;
-  printf("El valor de x es: %i", x);
+  int number;
+
+  printf("Ingresa un numero: ");
+  scanf("%i", &number);
+
+  int modulo = number % 5;
+
+  printf("El modulo del numero ingresado es: %i", modulo);
+
 
   return 0;
 }
